@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="/media/css/style.css"/>
+    <title>{% block title %}Bienvenue chez TIMON{% endblock %}</title>
+</head>
+<body>
+<header>BIENVENUE CHEZ TIMON</header>
+    <nav>
+        {% block nav%}
+        <ul>
+            <li><a href="/date">Date</a> </li>
+            <li><a href="/article">Article</a> </li>
+        </ul>
+        {% endblock %}
+    </nav>
+    <section id="content">
+        {% block content %} {% endblock %}
+    </section>
+<footer> &copy; TIMON'S TEAM</footer>
+</body>
+</html>

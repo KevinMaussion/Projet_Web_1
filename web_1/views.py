@@ -16,6 +16,10 @@ def article(request):
 def date_actuelle(request):
     return render(request, 'web_1/date.html', {'date': datetime.now()})
 
+
+def tweet(request):
+    return render(request, 'web_1/tweet_test.html')
+
 def lire(request, id):
     try:
         article = Article.objects.get(id=id)

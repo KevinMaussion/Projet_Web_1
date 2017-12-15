@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^date$', views.date_actuelle),
     url(r'^article/(\d+)$', views.lire, name='lire'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^tweet/', views.tweet),
 ]

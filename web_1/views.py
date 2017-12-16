@@ -1,8 +1,9 @@
-from django.shortcuts import render
 from datetime import datetime
-from web_1.models import Article
-from django.http import Http404
 
+from django.http import Http404
+from django.shortcuts import render
+
+from web_1.models import Article
 
 
 # Create your views here.
@@ -19,6 +20,10 @@ def date_actuelle(request):
 
 def tweet(request):
     return render(request, 'web_1/tweet_test.html')
+
+
+def tweet2(request):
+    return render(request, 'web_1/tweet_test_2.html')
 
 def lire(request, id):
     try:

@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+
 from web_1 import views
 
 urlpatterns = [
@@ -25,4 +26,5 @@ urlpatterns = [
     url(r'^article/(\d+)$', views.lire, name='lire'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tweet/', views.tweet),
+    url(r'^tweet2/', views.tweet2),
 ]
